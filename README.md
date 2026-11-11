@@ -36,8 +36,8 @@ COMP6011-Image-Caption-Retrieval/
 
 ## Quick start (Colab or Jupyter)
 
-1. Download `multimodal_shared_data(1).zip` from the approved shared project files (not part of this repository). The archive must contain `shared_data/coco_splits.json`, `shared_data/image_features.pt`, `shared_data/text_features.pt` and `results/dataset_audit.json`.
-2. Open `notebooks/COMP6011_Image_Caption_Retrieval.ipynb` in Colab, upload the ZIP when prompted (or place it in the working directory). **Do not extract it yourself.**
+1. Download `multimodal_shared_data.zip` from the approved shared project files (not part of this repository). The archive must contain `shared_data/coco_splits.json`, `shared_data/image_features.pt`, `shared_data/text_features.pt` and `results/dataset_audit.json`.
+2. Open `COMP6011_Image_Caption_Retrieval.ipynb` in Colab, upload the ZIP when prompted (or place it in the working directory). **Do not extract it yourself.**
 3. Install dependencies (local Jupyter): `python -m pip install -r requirements.txt`. In Colab, the main dependencies may already be present; check your runtime before reinstalling PyTorch.
 4. Choose **Runtime → Run all**. The notebook verifies the image/caption mapping, trains all three approaches, computes retrieval metrics and writes local results to `individual_coco_results/`.
 5. Compare generated `individual_coco_results/test_metrics.csv` and figures with the archived measurements under `results/`.
@@ -62,7 +62,7 @@ All models use the same train/validation/test data, compare Recall@1/5/10 and MR
 
 ## Reproducibility and ethics
 
-See [Data and reproducibility notes](docs/DATA_AND_REPRODUCIBILITY.md). Experimental limitations include one seed, frozen features, potential COCO captioning bias and untested demographic fairness. This is research coursework, not a production retrieval service.
+See [Data and reproducibility notes](DATA_AND_REPRODUCIBILITY.md). Experimental limitations include one seed, frozen features, potential COCO captioning bias and untested demographic fairness. This is research coursework, not a production retrieval service.
 
 ## References
 
