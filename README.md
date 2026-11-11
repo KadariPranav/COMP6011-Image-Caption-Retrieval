@@ -40,7 +40,7 @@ COMP6011-Image-Caption-Retrieval/
 2. Open `COMP6011_Image_Caption_Retrieval.ipynb` in Colab, upload the ZIP when prompted (or place it in the working directory). **Do not extract it yourself.**
 3. Install dependencies (local Jupyter): `python -m pip install -r requirements.txt`. In Colab, the main dependencies may already be present; check your runtime before reinstalling PyTorch.
 4. Choose **Runtime → Run all**. The notebook verifies the image/caption mapping, trains all three approaches, computes retrieval metrics and writes local results to `individual_coco_results/`.
-5. Compare generated `individual_coco_results/test_metrics.csv` and figures with the archived measurements under `results/`.
+5. Compare the generated individual_coco_results/test_metrics.csv and figures with the archived test_metrics.csv and PNG figures stored in the repository root.
 
 **Splits:** 4,000 train images (20,008 captions), 500 validation (2,499 captions), 500 test (2,503 captions). All splits are image-disjoint and use seed 42.
 
