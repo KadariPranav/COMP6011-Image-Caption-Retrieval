@@ -74,8 +74,7 @@ See [Data and reproducibility notes](DATA_AND_REPRODUCIBILITY.md). Experimental 
 
 ## AI-use transparency
 
-Generative AI tools were used to assist with code development, debugging, model optimisation, experimental analysis, documentation, and the preparation of the implementation report and presentation materials.
-
+Generative AI was used only for support: debugging code errors, checking grammar, and getting brief background on unfamiliar topics. All ideas and analysis are my own.
 AI assistance included troubleshooting implementation issues, improving the Triplet Ranking approach, interpreting evaluation metrics, organising experimental results, and improving the clarity and structure of written explanations.
 
 The project uses the shared COCO dataset and precomputed ResNet-50 and BERT features. The final experimental results were obtained from the executed Jupyter Notebook. All AI-assisted content should be reviewed and verified for technical accuracy and compliance with the university's academic integrity requirements.
