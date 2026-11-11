@@ -16,17 +16,22 @@ This project compares **symmetric InfoNCE**, **top-k Triplet Ranking** and **Ear
 
 Triplet leads on seven of eight metrics, though overlapping individual 95% bootstrap intervals do **not** establish significant superiority over InfoNCE. Early Fusion is much slower at exhaustive pair scoring, approximately **10.53s versus 0.072s** for InfoNCE in these recorded CPU experiments; this excludes original feature-extraction time.
 
+
 ## Repository structure
 
-```
-notebooks/COMP6011_Image_Caption_Retrieval.ipynb   # executed notebook, outputs included
-results/test_metrics.csv                         # notebook-derived measurements
-results/bootstrap_ci.csv                        # notebook-derived query-level CIs
-results/*.png                                   # charts extracted from executed notebook
-results/execution_environment.txt               # original observed runtime
-requirements.txt                                # Python packages
-.gitignore                                      # excludes data, large weights and local results
- docs/DATA_AND_REPRODUCIBILITY.md              # assumptions + reproduction instructions
+```text
+COMP6011-Image-Caption-Retrieval/
+├── README.md
+├── COMP6011_Image_Caption_Retrieval.ipynb
+├── test_metrics.csv
+├── bootstrap_ci.csv
+├── data_quality.png
+├── retrieval_comparison.png
+├── validation_curves.png
+├── execution_environment.txt
+├── requirements.txt
+├── DATA_AND_REPRODUCIBILITY.md
+└── .gitignore
 ```
 
 ## Quick start (Colab or Jupyter)
@@ -39,11 +44,13 @@ requirements.txt                                # Python packages
 
 **Splits:** 4,000 train images (20,008 captions), 500 validation (2,499 captions), 500 test (2,503 captions). All splits are image-disjoint and use seed 42.
 
+
 ## Visual results
 
-![Held-out Recall@K](results/retrieval_comparison.png)
+![Held-out Recall@K](retrieval_comparison.png)
 
-![Validation retrieval performance](results/validation_curves.png)
+![Validation retrieval performance](validation_curves.png)
+
 
 ## Method overview
 
